@@ -1,0 +1,60 @@
+.btn {
+	width: 100%;
+	background-color: #d3dae1;
+	border-radius: 20px;
+	font-family: arial;
+	font-size: 25px;
+	font-weight: bold;
+	border:solid 2px black;
+	cursor: pointer;
+	transition: all 0.3s linear;
+	min-height: 65px;
+	
+}
+p {
+	height: 100%;
+
+	}
+
+.btn:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.small{
+	height: 35px !important; 
+	border-radius: 10px;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.btn, .small {
+	margin: 2px;
+	
+}
+
+.Mas {
+ 	grid-column: span 1;
+	grid-row: span 2;
+	justify-self: center;
+	height: 100%
+	margin: auto;
+	place-items: center
+
+	}
+
+.Cero {
+	grid-column: span 2;
+	grid-row: span 1;
+
+
+}
+.centrar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  	margin: 0;
+
+}
