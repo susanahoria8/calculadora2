@@ -1,38 +1,36 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import './Base.css';
 import Tablero from './Tablero.jsx';
+import PaneldeBotones from './PaneldeBotones.jsx';
+import operaciones from './operaciones.jsx';
 
 
 
 
 class Base extends Component {
 
-	// El constructor se utiliza para inicializar el estado del componente. 
-	constructor() {
-		super()
-		this.state = {
-			numero1: '',
-			numero2: '',
-			operador:'',
-			resultado:''
+	state = {
+			total: null,
+			siguiente: null,
+			operador: null,
 
 		}
-	}
+	
+	handleClick = nameOfButton => this.setState(operaciones(this.state, nameOfButton))
 
-//Método que se ejecuta cuando el valor del campo de búsqueda cambia.
-	onSearchChange = (event) => {
-		this.setState({numero1: event.target.value})
-		
-	}
+
 
 	render(){
 	return (
 		<>
 		<div className='body'>
-			<Tablero/>
+			<Tablero value={this.state.siguiente || this.state.total || "0"}/>
+			
+				<PaneldeBotones clickHandle={this.handleClick} />
+			
 		</div>
 		</>
-		)
+		);
 }
 }
 

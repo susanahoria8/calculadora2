@@ -1,4 +1,4 @@
-.btn {
+button {
 	width: 100%;
 	background-color: #d3dae1;
 	border-radius: 20px;
@@ -16,7 +16,7 @@ p {
 
 	}
 
-.btn:hover {
+button:hover {
     -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
@@ -30,7 +30,7 @@ p {
 	font-size: 20px;
 }
 
-.btn, .small {
+.button, .small {
 	margin: 2px;
 	
 }

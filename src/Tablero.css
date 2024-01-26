@@ -8,4 +8,13 @@
 	margin-top: 20px;
 	box-shadow: inset -10px 10px 13px -2px  rgba(154, 154, 154, 1.1);
 	border: solid black;
+	display: grid;
+	justify-content: end;
+	align-content: center;
+
+}
+
+.result {
+	margin: 20px;
+	font-size: 45px;
 }
