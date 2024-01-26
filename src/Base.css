@@ -1,5 +1,5 @@
 .body {
-	background-color: lightpink;
+	background-color: #FF9BD2;
 	width: 450px;
 	margin: auto;
 	border-radius: 50px;
@@ -20,4 +20,8 @@
 	width: 380px;
 	padding: 20px;
 	
+}
+
+h1{
+	color: #D63484;
 }
